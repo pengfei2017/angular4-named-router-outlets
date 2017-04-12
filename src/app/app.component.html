@@ -1,0 +1,6 @@
+<a [routerLink]="['/home']">Home</a>
+<a
+  [routerLink]="['/child', {outlets: {'list-outlet': ['list'],'detail-outlet': ['detail'], 'speaker-outlet': ['speaker'], 'bio-outlet': ['none']}}]">
+  child
+</a>
+<router-outlet></router-outlet>
